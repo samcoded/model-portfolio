@@ -126,7 +126,22 @@ img {
     .name, .links {
         font-size: 25px;
     }
-
+    .mainbox {
+        width: 80%;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+    
+        img{
+            text-align: center;
+            width: auto;
+            height: 100%;
+        }
+    }
 }
 
 @media (max-width: 514px) {
@@ -140,6 +155,13 @@ img {
 @media (max-width: 419px) {
     .name, .links {
         font-size: 15px;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .name, .links {
+        font-size: 14px;
     }
 
 }
