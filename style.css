@@ -66,7 +66,8 @@ li a {
   padding: 10px;
 }
 
-.links .link:hover, .links .link .active {
+.links .link:hover,
+.links .link .active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -128,20 +129,34 @@ li a {
 }
 
 @media (max-width: 591px) {
-  .name, .links {
+  .name,
+  .links {
     font-size: 25px;
+  }
+  .mainbox {
+    width: 80%;
+    height: 300px;
   }
 }
 
 @media (max-width: 514px) {
-  .name, .links {
+  .name,
+  .links {
     font-size: 18px;
   }
 }
 
 @media (max-width: 419px) {
-  .name, .links {
+  .name,
+  .links {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .name,
+  .links {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

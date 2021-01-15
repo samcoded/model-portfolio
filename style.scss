@@ -1,155 +1,144 @@
-
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
 
-  body {
-    background-color: crimson;
-    color: white;
-  }
+body {
+  background-color: crimson;
+  color: white;
+}
 
-  li {
-      list-style: none;
-  }
+li {
+  list-style: none;
+}
 
-  a {
-    color: white;
-  }
+a {
+  color: white;
+}
 li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .main {
-    position: relative;
-    height: 100vh;
+  position: relative;
+  height: 100vh;
 }
 .mainbox {
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 
-    img{
-        text-align: center;
-        width: auto;
-        height: 100%;
-    }
+  img {
+    text-align: center;
+    width: auto;
+    height: 100%;
+  }
 }
 
-
 .links {
-    font-size: 25px;
-    display: flex;
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin: auto;
-    
-.link a{
+  font-size: 25px;
+  display: flex;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+
+  .link a {
     display: inline-block;
     margin: 2px;
     padding: 10px;
     // border: 2px solid white;
+  }
+  .link:hover,
+  .link .active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
-.link:hover, .link .active{
-    background-color: rgba(255,255,255,0.2);
-    }
-
-}
-
-
-
 
 .name {
-    font-size: 30px;
-    word-spacing: 80px;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  font-size: 30px;
+  word-spacing: 80px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.avatar{
-    width: 50px;
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  img {
     height: 50px;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+
+  i {
+    width: 30px;
+    height: 30px;
+    display: flex;
     background-color: white;
     border-radius: 50%;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
-img {
-    height: 50px;
+    margin: 20px;
+    display: none;
+    // position: absolute;
+    // top:50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+  }
 }
-}
-
-.social
-{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translate(-50%,-50%);
-
-    i{
-        width: 30px;
-        height: 30px;
-        display: flex;
-        background-color: white;
-        border-radius: 50%;
-        margin: 20px;
-        display: none;
-        // position: absolute;
-        // top:50%;
-        // left: 50%;
-        // transform: translate(-50%,-50%);
-    }
-}
-
-
-
 
 @media (max-width: 591px) {
-    .name, .links {
-        font-size: 25px;
-    }
-    .mainbox {
-        width: 80%;
-        height: 300px;
-}
+  .name,
+  .links {
+    font-size: 25px;
+  }
+  .mainbox {
+    width: 80%;
+    height: 300px;
+  }
 }
 
 @media (max-width: 514px) {
-    .name, .links {
-        font-size: 18px;
-    }
-
+  .name,
+  .links {
+    font-size: 18px;
+  }
 }
 
-
 @media (max-width: 419px) {
-    .name, .links {
-        font-size: 15px;
-    }
-
+  .name,
+  .links {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 350px) {
-    .name, .links {
-        font-size: 14px;
-    }
-
+  .name,
+  .links {
+    font-size: 14px;
+  }
 }
