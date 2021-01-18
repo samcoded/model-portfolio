@@ -6,6 +6,7 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: crimson;
   color: white;
 }
@@ -20,17 +21,44 @@ a {
 li a {
   text-decoration: none;
 }
+
 .main {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  align-items: center;
+  header {
+    height: 20%;
+  }
+  main {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav {
+    height: 20%;
+  }
 }
+
+.box {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(121, 10, 32);
+  position: absolute;
+  top: 0%;
+  transform: translate(-50%, 0%);
+  z-index: -2;
+}
+
 .mainbox {
   width: 450px;
   height: 450px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 
@@ -44,31 +72,39 @@ li a {
 .links {
   font-size: 25px;
   display: flex;
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  // position: absolute;
+  // top: 95%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 
+  // :nth-child(2) {
+  //   margin-right: 50px;
+  // }
+
+  // :nth-child(4) {
+  //   margin-left: 50px;
+  // }
+  .link {
+    margin: 20px;
+  }
   .link a {
     display: inline-block;
-    margin: 2px;
     padding: 10px;
     // border: 2px solid white;
   }
-  .link:hover,
-  .link .active {
+  :hover,
+  .active {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 
 .name {
   font-size: 30px;
-  word-spacing: 80px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  word-spacing: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .avatar {
@@ -76,10 +112,12 @@ li a {
   height: 50px;
   background-color: white;
   border-radius: 50%;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: inline;
+  margin-top: 40px;
+  // position: absolute;
+  // top: 85%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   overflow: hidden;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
   img {
@@ -90,55 +128,64 @@ li a {
 .social {
   display: flex;
   flex-direction: column;
-  text-align: center;
   position: absolute;
   top: 50%;
   left: 90%;
   transform: translate(-50%, -50%);
+  justify-content: space-between;
+  align-items: center;
 
   i {
     width: 30px;
     height: 30px;
-    display: flex;
-    background-color: white;
     border-radius: 50%;
-    margin: 20px;
-    display: none;
-    // position: absolute;
-    // top:50%;
-    // left: 50%;
-    // transform: translate(-50%,-50%);
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  i:hover {
+    background-color: white;
+    color: crimson;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
-@media (max-width: 591px) {
-  .name,
-  .links {
-    font-size: 25px;
-  }
-  .mainbox {
-    width: 80%;
-    height: 300px;
-  }
-}
+// @media (max-width: 591px) {
+//   .name,
+//   .links {
+//     font-size: 25px;
+//   }
+//   .mainbox {
+//     width: 80%;
+//     height: 300px;
+//   }
+// }
 
-@media (max-width: 514px) {
-  .name,
-  .links {
-    font-size: 18px;
-  }
-}
+// @media (max-width: 514px) {
+//   .name,
+//   .links {
+//     font-size: 18px;
+//   }
+// }
 
-@media (max-width: 419px) {
-  .name,
-  .links {
-    font-size: 15px;
-  }
-}
+// @media (max-width: 419px) {
+//   .name,
+//   .links {
+//     font-size: 15px;
+//   }
+// }
 
-@media (max-width: 350px) {
-  .name,
-  .links {
-    font-size: 14px;
-  }
-}
+// @media (max-width: 350px) {
+//   .name,
+//   .links {
+//     font-size: 14px;
+//   }
+// }

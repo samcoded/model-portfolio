@@ -7,6 +7,7 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: crimson;
   color: white;
 }
@@ -25,17 +26,60 @@ li a {
 
 .main {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main header {
+  height: 20%;
+}
+
+.main main {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main nav {
+  height: 20%;
+}
+
+.box {
+  height: 100%;
+  width: 50%;
+  background-color: #790a20;
+  position: absolute;
+  top: 0%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  z-index: -2;
 }
 
 .mainbox {
   width: 450px;
   height: 450px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -52,33 +96,33 @@ li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links .link {
+  margin: 20px;
 }
 
 .links .link a {
   display: inline-block;
-  margin: 2px;
   padding: 10px;
 }
 
-.links .link:hover,
-.links .link .active {
+.links :hover,
+.links .active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .name {
   font-size: 30px;
-  word-spacing: 80px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  word-spacing: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .avatar {
@@ -86,11 +130,8 @@ li a {
   height: 50px;
   background-color: white;
   border-radius: 50%;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  display: inline;
+  margin-top: 40px;
   overflow: hidden;
   -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
@@ -108,55 +149,45 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
   position: absolute;
   top: 50%;
   left: 90%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social i {
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social i:hover {
   background-color: white;
-  border-radius: 50%;
-  margin: 20px;
-  display: none;
+  color: crimson;
 }
 
-@media (max-width: 591px) {
-  .name,
-  .links {
-    font-size: 25px;
-  }
-  .mainbox {
-    width: 80%;
-    height: 300px;
-  }
-}
-
-@media (max-width: 514px) {
-  .name,
-  .links {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 419px) {
-  .name,
-  .links {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 350px) {
-  .name,
-  .links {
-    font-size: 14px;
-  }
+.social a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
