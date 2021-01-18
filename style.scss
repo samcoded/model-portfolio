@@ -24,26 +24,26 @@ li a {
 
 .main {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
   align-items: center;
-  header {
-    height: 20%;
-  }
+  // header {
+  //   height: 20%;
+  // }
   main {
-    height: 60%;
+    // height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
 
-  nav {
-    height: 20%;
-  }
+  //   nav {
+  //     height: 20%;
+  //   }
 }
 
 .box {
@@ -101,7 +101,7 @@ li a {
 }
 
 .name {
-  font-size: 30px;
+  font-size: 40px;
   word-spacing: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -113,7 +113,7 @@ li a {
   background-color: white;
   border-radius: 50%;
   display: inline;
-  margin-top: 40px;
+  margin-top: 20px;
   // position: absolute;
   // top: 85%;
   // left: 50%;
