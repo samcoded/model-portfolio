@@ -9,7 +9,7 @@
 body {
   min-height: 100vh;
   background-color: #475e6e;
-  color: white;
+  color: #e2dddd;
 }
 
 li {
@@ -17,7 +17,7 @@ li {
 }
 
 a {
-  color: white;
+  color: #e2dddd;
 }
 
 li a {
@@ -117,7 +117,7 @@ li a {
 
 .links :hover,
 .links .active {
-  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #e2dddd;
 }
 
 .name {
@@ -184,7 +184,7 @@ li a {
 }
 
 .social i:hover {
-  background-color: white;
+  background-color: #e2dddd;
   color: #475e6e;
 }
 

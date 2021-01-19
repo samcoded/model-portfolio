@@ -1,6 +1,6 @@
 $mcolor: #475e6e;
 $scolor: #2a3b47;
-$ecolor: white;
+$ecolor: rgb(226, 221, 221);
 
 * {
   margin: 0;
@@ -105,7 +105,8 @@ li a {
   }
   :hover,
   .active {
-    background-color: rgba(255, 255, 255, 0.2);
+    // background-color: rgba(182, 182, 182, 0.479);
+    border: 1px solid $ecolor;
   }
 }
 
